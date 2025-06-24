@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Imprenta LTDA</title>
+
+    <link rel="stylesheet" href="plantilla.css">
+
+    <!-- REFERENCIA A BOOSTRAP-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!--CABECERA-->
+    <div id="cabecera">
+        
+        <div id="logo">
+			<h1>IMPRENTA LTDA</h1>
+		</div>
+        <div id="menu">
+			<ul>
+				<li><a href="test1.html" href="#">Inicio</a></li>
+				<li><a href="#datos">Quienes Somos</a></li>
+				<li><a href="#">Servicios</a></li>
+			</ul>
+		</div>
+    </div>
+
+    <div id="quienesSomos">
+        <h1>¡Es hora de hacer realidad tus ideas!</h1>
+        <h2>Y nosotros te ascesoraremos</h2>
+        <h3>Somos una empresa enfocada en el diseño y primera imagen de tu compañia, 
+            dandole estilo y personalidad a tu marca</h3>
+    </div>
+	
+    <div id="tipografia">
+
+        <div id="tipografiaText">
+
+            <h1>Tipografia</h1>
+            <h3>Descubre tu estilo y diseño para representar tu negocio y dejar tu marca,
+                 tenemos diferentes tipos de diseño que te ayudaran a decidir.</h3>
+
+        </div>
+        <div id="carrusel">
+            <img id="imagen" src="imagenes/tipografia1.webp" alt="Carrusel">
+        </div>
+
+        
+
+            <script>
+                const imagenes = ["imagenes/tipografia1.webp",
+                                    "imagenes/tipografia2.jpg",
+                                    "imagenes/tipografia3.jpg",
+                                    "imagenes/tipografia4.jpg"];
+                    let indice = 0;
+
+                    setInterval(() => {
+                        indice = (indice + 1) % imagenes.length;
+                        document.getElementById("imagen").src = imagenes[indice];
+                    }, 4000);
+                    // cambia cada 4 segundos
+            </script>
+        
+    </div>
+    <div id="señaleticas">
+
+        <div id="carrusel2">
+            <img id="imagen" src="imagenes/tipografia1.webp" alt="Carrusel">
+        </div>
+
+        <div id="señaleticaText">
+
+            <h1>Señaleticas</h1>
+            <h3>Descubre tu estilo y diseño para representar tu negocio y dejar tu marca,
+                 tenemos diferentes tipos de diseño que te ayudaran a decidir.</h3>
+
+        </div>    
+        
+    </div>
+    <div id="letreros">
+
+        <div id="letrerosText">
+
+            <h1>Letreros & Logos</h1>
+            <h3>Descubre tu estilo y diseño para representar tu negocio y dejar tu marca,
+                 tenemos diferentes tipos de diseño que te ayudaran a decidir.</h3>
+
+        </div>  
+        <div id="carrusel3">
+            <img id="imagen" src="imagenes/tipografia1.webp" alt="Carrusel">
+        </div>  
+        
+    </div>
+    <!--
+    <div id="datos">
+
+        <div id="icon">
+
+            <a href="#"> 
+                <div class="iconos">
+                    <img src="imagenes/sobre.png" id="center" width="50%" height="50%" >
+                </div>
+            </a>
+
+            <a href="#">
+					<div class="iconos">
+						<img src="imagenes/instagram.png" width="40px" height="40px" style="top: 4px">	
+					</div>
+				</a>
+
+				<a href="#">
+					<div class="iconos">
+						<img src="imagenes/google-plus.png" width="40px" height="40px">
+					</div>
+				</a>
+
+				<a href="#">
+					<div class="iconos">
+						<img src="imagenes/facebook.png" width="40px" height="40px">
+					</div>
+				</a>
+        </div>   
+    </div>
+    -->
+
+    <footer >
+        <span id="text-pie">Desarrollo Web y Mobile: J.A. Copyright</span>
+    </footer>
+
+</body>
+</html>
